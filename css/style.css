@@ -134,22 +134,58 @@ h1, h2, h3 {
 
 .hero {
   position: relative;
-  padding: 4.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60vh;
+  padding: 1.5rem 1.25rem 2.5rem;
   text-align: center;
-  background: linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-              url("../images/vetThemeBanner.png") center/cover no-repeat;
+  background: var(--color-bg-alt) url("../images/vetThemeBanner.png") center/contain no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.75) 100%);
+  pointer-events: none;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
   font-size: 2.4rem;
   margin-bottom: 0.4rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.8);
 }
 
 .hero p {
-  color: var(--color-text-muted);
-  font-size: 1.15rem;
+  position: absolute;
+  top: 0.3cm;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
   max-width: 640px;
-  margin: 0 auto 1.5rem;
+  color: var(--color-text);
+  font-size: 1.15rem;
+  margin: 0;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+}
+
+.hero-actions {
+  position: absolute;
+  bottom: 0.3cm;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.9rem;
 }
 
 .btn {
@@ -171,7 +207,6 @@ h1, h2, h3 {
   background: transparent;
   border: 2px solid var(--color-gold);
   color: var(--color-gold);
-  margin-left: 0.75rem;
 }
 
 .btn-outline:hover { background: var(--color-gold); color: #16171a; }
