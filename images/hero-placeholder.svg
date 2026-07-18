@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <rect width="1200" height="500" fill="#26282c"/>
+  <rect width="1200" height="500" fill="url(#stripes)" opacity="0.15"/>
+  <defs>
+    <pattern id="stripes" width="40" height="40" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="20" height="40" fill="#c9a227"/>
+    </pattern>
+  </defs>
+  <text x="600" y="260" font-family="Georgia, serif" font-size="40" fill="#f2efe9" text-anchor="middle">
+    Replace with a storefront / shelf photo
+  </text>
+  <text x="600" y="305" font-family="Arial, sans-serif" font-size="20" fill="#b9b6b0" text-anchor="middle">
+    images/hero-placeholder.svg — recommended size ~1600x700px
+  </text>
+</svg>
