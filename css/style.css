@@ -141,7 +141,7 @@ h1, h2, h3 {
   min-height: 60vh;
   padding: 1.5rem 1.25rem 2.5rem;
   text-align: center;
-  background: var(--color-bg-alt) url("../images/vetThemeBanner.png") center/contain no-repeat;
+  background: var(--color-bg-alt) url("../images/vet_exp.png") center/contain no-repeat;
 }
 
 .hero::before {
